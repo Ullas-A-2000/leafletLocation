@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onclick="document.querySelectorAll('.list-group-item-load').forEach(item => item.remove());
+        document.querySelectorAll('.list-group-item').forEach(item => item.remove());">
+<div style="display: flex;width: 100%; flex-direction: column; gap: 100px; align-items: center;margin-top: 10%; position :relative" >
+
+    <div style="flex: 1; width: 90%" class="ipCont">
+        <p>This is the same leaflet api which we were using in vue app</p>
+        <input class="input" oninput="astroApi(event)" type="text" id="tomtom" placeholder="Astrology api search" onclick="document.querySelectorAll('.list-group-item-load').forEach(item => item.remove());
+        document.querySelectorAll('.list-group-item').forEach(item => item.remove());">
+        <div id="tomtomDropdown"></div>
+    </div>
+
+</div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="script.js"></script>
+</body>
+</html>

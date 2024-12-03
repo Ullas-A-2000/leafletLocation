@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'cool';
+    src: url('./cool.ttf');
+}
+body {
+    background: #53c4a0;
+    font-family: cool;
+  }
+  
+.input {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.ipCont{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#openCageDropdown{
+    top: 110px;
+    width: 46%;
+    border-radius: 10px;
+    margin-top: 5px;
+    /* height: 100px; */
+    background-color: white;
+    position: absolute;
+}
+
+#tomtomDropdown{
+    top: 100%;
+    width: 46%;
+    border-radius: 10px;
+    margin-top: 5px;
+    /* height: 100px; */
+    background-color: white;
+    position: absolute;
+}
+
+li{
+    list-style: none;
+    padding: 5px 20px;
+    /* cursor: pointer; */
+}
