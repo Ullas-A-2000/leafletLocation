@@ -85,7 +85,7 @@ async function astroApi(e) {
       try {
         const base64Credentials = btoa(`${634034}:${'e5468d2fc981c68ddd64d9ab392ae86a9fb19144'}`);
         const response = await axios.get(
-          `https://nominatim.openstreetmap.org/search?format=geojson&limit=5&addressdetails=1&city=${search}`,
+          `https://nominatim.openstreetmap.org/search?format=geojson&limit=10&addressdetails=1&city=${search}`,
             {
                 "place": search,
                 "maxRows": 7
